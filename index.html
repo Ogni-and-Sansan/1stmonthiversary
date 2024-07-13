@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1-Month Anniversary!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Happy 1-Month Anniversary!</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#poem">Poem Generator</a></li>
+            <li><a href="#love-notes">Love Notes</a></li>
+            <li><a href="#things-to-do">Things to Do</a></li>
+            <li><a href="#playlist">Playlist</a></li>
+            <li><a href="#fortune-cookie">Fortune Cookie</a></li>
+            <li><a href="#quotes">Love Quotes</a></li>
+            <li><a href="#quiz">Memory Quiz</a></li>
+            <li><a href="#dates">Virtual Date Ideas</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="poem">
+            <h2>Poem Generator</h2>
+            <input type="text" id="name" placeholder="Enter your name">
+            <button onclick="generatePoem()">Generate Poem</button>
+            <p id="poemOutput"></p>
+        </section>
+        
+        <section id="love-notes">
+            <h2>Love Notes</h2>
+            <button onclick="showNote()">Reveal Love Note</button>
+            <p id="noteOutput"></p>
+        </section>
+        
+        <section id="things-to-do">
+            <h2>Things to Do</h2>
+            <textarea id="thingsToDo" rows="4" cols="50" placeholder="Enter your ideas here..."></textarea>
+            <br>
+            <button onclick="sendEmail()">Send Email</button>
+        </section>
+        
+        <section id="playlist">
+            <h2>Playlist</h2>
+            <iframe src="https://open.spotify.com/embed/playlist/02mxeNbnpXej5nMtJGKRcV?si=34813391df824de0&pt=4620f7021f31849c8d9f3377ed104ff9" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </section>
+        
+        <section id="fortune-cookie">
+            <h2>Fortune Cookie</h2>
+            <button onclick="revealFortune()">Open Fortune Cookie</button>
+            <p id="fortuneOutput"></p>
+        </section>
+        
+        <section id="quotes">
+            <h2>Love Quotes</h2>
+            <button onclick="showQuote()">Show Quote</button>
+            <p id="quoteOutput"></p>
+        </section>
+        
+        <section id="quiz">
+            <h2>Memory Quiz</h2>
+            <form id="quizForm">
+                <p>Where did we first meet?</p>
+                <input type="radio" name="q1" value="a"> a) Clock tower<br>
+                <input type="radio" name="q1" value="b"> b) Library<br>
+                <input type="radio" name="q1" value="c"> c) Cafeteria<br><br>
+
+                <p>What did we do on our first date?</p>
+                <input type="radio" name="q2" value="a"> a) Watched a movie<br>
+                <input type="radio" name="q2" value="b"> b) Went cycling around the campus<br>
+                <input type="radio" name="q2" value="c"> c) Played video games<br><br>
+
+                <p>What was our first meal together?</p>
+                <input type="radio" name="q3" value="a"> a) Burger and fries<br>
+                <input type="radio" name="q3" value="b"> b) Pizza<br>
+                <input type="radio" name="q3" value="c"> c) Salad<br><br>
+
+                <p>Where was our first kiss?</p>
+                <input type="radio" name="q4" value="a"> a) Park<br>
+                <input type="radio" name="q4" value="b"> b) Elevator<br>
+                <input type="radio" name="q4" value="c"> c) Restaurant<br><br>
+
+                <button type="button" onclick="submitQuiz()">Submit</button>
+                <p id="quizOutput"></p>
+            </form>
+        </section>
+        
+        <section id="dates">
+            <h2>Virtual Date Ideas</h2>
+            <ul>
+                <li>Watch a movie together</li>
+                <li>Play an online game together</li>
+                <li>Cook the same recipe (can order) and have a virtual dinner date</li>
+                <li>Take an online class together</li>
+                <li>Have a virtual museum tour</li>
+                <li>Attend a live stream event together</li>
+                <li>Solve an online mystery game</li>
+                <li>Read a book together</li>
+                <li>A virtual meditation session</li>
+            </ul>
+        </section>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
